@@ -1,0 +1,7 @@
+card, .button {
+  transition: transform 0.3s;
+}
+
+.card:hover, .button:hover {
+  transform: translateY(-8px) scale(1.05);
+}

@@ -1,0 +1,38 @@
+/* 1. Square */
+.square {
+  width: 100px;
+  height: 100px;
+  border: 50px solid black;
+}
+
+/* 2. Rectangle */
+.rectangle {
+  width: 200px;
+  height: 100px;
+  border: 50px solid black;
+}
+
+/* 3. Perfect Circle */
+.circle {
+  width: 100px;
+  height: 100px;
+  border: 50px solid black;
+  border-radius: 50%;
+}
+
+/* 4. Capsule Pill */
+.capsule {
+  width: 200px;
+  height: 100px;
+  border: 50px solid black;
+  border-radius: 50px;
+}
+
+/* 5. CSS Triangle using border tricks */
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid black;
+}

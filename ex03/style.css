@@ -1,0 +1,31 @@
+/* Color Swatch Palette Demonstrating Color Models */
+.swatch-named {
+  color: red;
+  background-color: blue;
+}
+
+.swatch-hex {
+  color: #ffffff;
+  background-color: #ff5733;
+}
+
+.swatch-rgb {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 128, 0);
+}
+
+.swatch-rgba {
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+/* Opacity Test: Fades the container and all its children */
+.box-opacity {
+  background-color: rgb(0, 0, 255);
+  opacity: 0.5;
+}
+
+/* RGBA Test: Affects background transparency only, children remain opaque */
+.box-rgba {
+  background-color: rgba(0, 0, 255, 0.5);
+}

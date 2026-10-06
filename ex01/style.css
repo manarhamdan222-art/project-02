@@ -1,0 +1,25 @@
+/* Pinned navigation bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Card container */
+.card-container {
+  position: relative;
+}
+
+/* Absolute notification badge anchored inside card */
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Fixed back-to-top button at bottom-right of viewport */
+.back-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
