@@ -1,31 +1,69 @@
-/* Color Swatch Palette Demonstrating Color Models */
-.swatch-named {
-  color: red;
-  background-color: blue;
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
-.swatch-hex {
-  color: #ffffff;
-  background-color: #ff5733;
+h1 {
+    margin-bottom: 30px;
 }
 
-.swatch-rgb {
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 128, 0);
+.palette {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.swatch-rgba {
-  color: rgba(0, 0, 0, 1);
-  background-color: rgba(255, 0, 0, 0.5);
+.swatch {
+    width: 180px;
+    height: 120px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 
-/* Opacity Test: Fades the container and all its children */
-.box-opacity {
-  background-color: rgb(0, 0, 255);
-  opacity: 0.5;
+.named {
+    background-color: tomato;
 }
 
-/* RGBA Test: Affects background transparency only, children remain opaque */
-.box-rgba {
-  background-color: rgba(0, 0, 255, 0.5);
+.hex {
+    background-color: #3498db;
+}
+
+.rgb {
+    background-color: rgb(46, 204, 113);
+}
+
+.rgba {
+    background-color: rgba(155, 89, 182, 0.5);
+}
+
+h2 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.comparison {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.opacity-box,
+.rgba-box {
+    width: 200px;
+    height: 120px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: blue;
+}
+
+.opacity-box {
+    opacity: 0.5;
+}
+
+.rgba-box {
+    background-color: rgba(0, 0, 255, 0.5);
 }

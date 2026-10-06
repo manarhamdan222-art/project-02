@@ -1,25 +1,85 @@
-/* Pinned navigation bar */
-.navbar {
-  position: fixed;
-  top: 0;
-  z-index: 1000;
+.{ 
+    box-sizing: border-box;
 }
 
-/* Card container */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    z-index: 10;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.nav-container a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 120px 20px 80px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 .card-container {
-  position: relative;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-/* Absolute notification badge anchored inside card */
+.card {
+    position: relative;
+    width: 280px;
+    min-height: 180px;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
 .badge {
-  position: absolute;
-  top: 0;
-  right: 0;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    font-size: 12px;
 }
 
-/* Fixed back-to-top button at bottom-right of viewport */
 .back-to-top {
-  position: fixed;
-  bottom: 0;
-  right: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
 }

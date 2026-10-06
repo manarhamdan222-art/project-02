@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Exercise 03 - Colors and Opacity</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors & Opacity</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Color Swatch Palette -->
-  <div class="swatch-named">Named</div>
-  <div class="swatch-hex">HEX</div>
-  <div class="swatch-rgb">RGB</div>
-  <div class="swatch-rgba">RGBA</div>
+    <h1>Color Palette</h1>
 
-  <!-- Opacity Comparison: Fades children -->
-  <div class="box-opacity">
-    <p>Text inside opacity element</p>
-  </div>
+    <div class="palette">
+        <div class="swatch named">
+            Named Color
+        </div>
 
-  <!-- RGBA Comparison: Isolates background transparency -->
-  <div class="box-rgba">
-    <p>Text inside RGBA element</p>
-  </div>
+        <div class="swatch hex">
+            HEX Color
+        </div>
+
+        <div class="swatch rgb">
+            RGB Color
+        </div>
+
+        <div class="swatch rgba">
+            RGBA Color
+        </div>
+    </div>
+
+    <h2>Opacity vs RGBA</h2>
+
+    <div class="comparison">
+
+        <div class="opacity-box">
+            <p>Opacity: 0.5</p>
+        </div>
+
+        <div class="rgba-box">
+            <p>RGBA: 0.5</p>
+        </div>
+
+    </div>
 
 </body>
 </html>

@@ -1,26 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Exercise 01 - Positioning</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Pinned navigation bar -->
-  <nav class="navbar">
-    <span>Navigation Bar</span>
-  </nav>
+    <nav>
+        <div class="nav-container">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
 
-  <!-- Card container -->
-  <div class="card-container">
-    <!-- Absolute notification badge anchored inside card corner -->
-    <span class="badge">New</span>
-    <p>Card Content</p>
-  </div>
+    <main>
+        <h1>Positioning</h1>
 
-  <!-- Fixed back-to-top button at bottom-right -->
-  <button class="back-to-top">Top</button>
+        <div class="card-container">
+
+            <div class="card">
+                <span class="badge">New</span>
+                <h2>Card 1</h2>
+                <p>
+                    This card contains an absolute notification badge.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Card 2</h2>
+                <p>
+                    This is another card in the container.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Card 3</h2>
+                <p>
+                    Positioning controls where elements appear.
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <button class="back-to-top">↑</button>
 
 </body>
 </html>
