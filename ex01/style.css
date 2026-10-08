@@ -1,4 +1,8 @@
-.{ 
+html {
+    scroll-behavior: smooth;
+}
+
+* {
     box-sizing: border-box;
 }
 
@@ -72,14 +76,28 @@ h1 {
     font-size: 12px;
 }
 
+/* Back to top style */
 .back-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
     width: 45px;
     height: 45px;
-    border: none;
+    background-color: #222;
+    color: #fff;
+    text-decoration: none;
     border-radius: 50%;
-    font-size: 20px;
-    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 99;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-to-top:hover {
+    background-color: #444;
+    transform: translateY(-3px);
 }
